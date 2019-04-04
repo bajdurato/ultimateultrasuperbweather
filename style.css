@@ -1,4 +1,6 @@
-
+:root{
+    --main-panel-bg: rgba(0, 0, 0, 0.3);
+}
 body{
     margin: 0;
     padding: 0;
@@ -15,14 +17,21 @@ body{
     height: 100vh;
     width: 100vw;
     font-family: 'Roboto', sans-serif;
+    background-image: url("./images/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .main-panel{
     display:flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: grey;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-panel-bg);
     height: 55%;
     width: 80%;
+    color: #FFFFFF;
+    border-radius: 15px;
 }
 .info{
     display:flex;
@@ -34,4 +43,16 @@ body{
     height: 25%;
     width: 60%;
     background-color: aqua;
+}
+.country{
+    font-size: 2.25rem;
+}
+.city{
+    font-size: 6rem;
+}
+.date, .week-day, .weather-type{
+    font-size: 3rem;
+}
+.temperature{
+    font-size: 11.25rem;
 }
