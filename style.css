@@ -61,6 +61,15 @@ body{
         font-size: 15px;
     }
 
+    .weather-type {
+        text-align: center;
+    }
+
+    .weather-icon img {
+         width: 125px;
+         height: auto;
+    }
+
     .temperature {
         font-size: 58px;
     }
