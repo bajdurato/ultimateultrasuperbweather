@@ -76,6 +76,7 @@ body{
     /* .search-text img {
         height: 10px;
     } */
+
 }
 .info{
     display:flex;
@@ -90,15 +91,15 @@ body{
     width: 70vw;
 }
 .search-title{
-    font-size: 3.5vw;
+    font-size: 20px;
 }
 
 .search-text{
-    height: 35px;
-    width: 70%;
+    height: 40px;
+    width: 90%;
     display: flex;
     position: relative;
-    right: -20px;
+    right: -15px;
     /* justify-content: space-between; */
 }
 .search-text input{
@@ -117,7 +118,7 @@ button{
     border-radius: 50px;
     border: none;
     color: #FFFFFF;
-    height: 4.5vh;
+    height: 40px;
     width: 100px;
 }
 @media (min-width:601px){
@@ -139,10 +140,10 @@ button{
     }
 }
 .search-text img {
-        right: 35px;
-        margin: 2px 0 2px 0;
+        right: 36px;
+        margin: 8px 0 8px 0;
         position: relative;
-        height: 90%;
+        height: 60%;
         width: auto;
         /* transform: scale(0.7); */
     }
