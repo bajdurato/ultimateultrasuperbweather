@@ -89,5 +89,13 @@ button{
     font-size: 3rem;
 }
 .temperature{
-    font-size: 11.25rem;
+    font-size: 4rem;
+}
+
+.windSpeed {
+    font-size: 4rem;
+}
+
+.humidity {
+    font-size: 4rem;
 }
