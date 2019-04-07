@@ -49,7 +49,7 @@ function init(dataSet) {
     let weatherDesriptionHeader = document.getElementsByClassName('weather-type');
     let temperatureElement = document.getElementsByClassName('temperature');
     let humidityElement = document.getElementsByClassName('humidity');
-    let windSpeedElement = document.getElementsByClassName('windspeed');
+    let windSpeedElement = document.getElementsByClassName('windSpeed');
 
     // weatherIcon.src = 'http://openweatherapp.org/jpg/w/' + dataSet.weather[0].icon + '.png';
 
@@ -72,6 +72,6 @@ function init(dataSet) {
 
 // Reakcja na klikniecie przycisku i pobranie danych(miasta) z inputu oraz uruchomienie funkcji pogodowej z wybranym miastem
 document.getElementById('searchBtn').addEventListener('click', () => {
-    let city = document.getElementsByClassName('city').value;
+    let city = document.getElementById('city').value;
     searchWeather(city);
 })
