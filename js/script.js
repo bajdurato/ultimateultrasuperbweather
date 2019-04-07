@@ -46,12 +46,14 @@ function init(dataSet) {
             break;
     }
 
-    let weatherDesriptionHeader = document.getElementsByClassName('weather-type');
+    let weatherTypeElement = document.getElementsByClassName('weatherType');
     let temperatureElement = document.getElementsByClassName('temperature');
     let humidityElement = document.getElementsByClassName('humidity');
     let windSpeedElement = document.getElementsByClassName('windSpeed');
 
-    // weatherIcon.src = 'http://openweatherapp.org/jpg/w/' + dataSet.weather[0].icon + '.png';
+    let weatherIcon = document.getElementById('weatherIcon');
+    weatherIcon.src = 'http://openweathermap.org/img/w/' + dataSet.weather[0].icon + '.png';
+    // console.log(weatherIcon.src);
 
     let resultsDescription = dataSet.weather[0].description;
     weatherDesriptionHeader.inner = resultsDescription.charAt(0).toUpperCase () + resultsDescription.slice(1)
