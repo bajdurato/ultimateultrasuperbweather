@@ -46,7 +46,7 @@ function init(dataSet) {
             break;
     }
 
-    let weatherDesriptionHeader = document.getElementsByClassName('weatherDesriptionHeader');
+    let weatherDesriptionHeader = document.getElementsByClassName('weather-type');
     let temperatureElement = document.getElementsByClassName('temperature');
     let humidityElement = document.getElementsByClassName('humidity');
     let windSpeedElement = document.getElementsByClassName('windspeed');
@@ -71,7 +71,7 @@ function init(dataSet) {
 
 
 // Reakcja na klikniecie przycisku i pobranie danych(miasta) z inputu oraz uruchomienie funkcji pogodowej z wybranym miastem
-document.getElementsByClassName('searchBtn').addEventListener('click', () => {
+document.getElementById('searchBtn').addEventListener('click', () => {
     let city = document.getElementsByClassName('city').value;
     searchWeather(city);
 })
