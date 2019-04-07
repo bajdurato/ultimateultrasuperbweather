@@ -3,6 +3,7 @@ var apiId = 'a85d2123b5271bca849dc751e64a2b42';
 // Jednostki w ktorych chcemy otrzymywac dane
 var units = 'metric';
 // Sposob wyszukiwania zip lub miasto. Mozemy zostawic stale lub dac mozliwosc wyboru
+// IMO ZIP jest u nas rzadko wykorzystywany, zostałbym przy samym mieście - Wiktor
 var searchMethod = 'q';
 
 // Funkcja wysylajaca zapytanie o dane pogodowe za pomoca naszego api na podany url,
