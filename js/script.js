@@ -46,7 +46,7 @@ function init(dataSet) {
             break;
     }
 
-    let weatherTypeElement = document.getElementsByClassName('weatherType');
+    let weatherType = document.getElementsByClassName('weatherType');
     let temperatureElement = document.getElementsByClassName('temperature');
     let humidityElement = document.getElementsByClassName('humidity');
     let windSpeedElement = document.getElementsByClassName('windSpeed');
@@ -56,7 +56,7 @@ function init(dataSet) {
     // console.log(weatherIcon.src);
 
     let resultsDescription = dataSet.weather[0].description;
-    weatherDesriptionHeader.inner = resultsDescription.charAt(0).toUpperCase () + resultsDescription.slice(1)
+    weatherType.inner = resultsDescription.charAt(0).toUpperCase () + resultsDescription.slice(1)
 
     temperatureElement.innerHTML = Math.floor(dataSet.main.temp) + '&#176';
     windSpeedElement.innerHTML = 'Wiatr' + Math.floor(dataSet.wind.speed) + 'm/s';
