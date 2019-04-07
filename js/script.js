@@ -19,8 +19,9 @@ function searchWeather(city) {
 
 // Funkcja do obrabiania danych
 function init(dataSet) {
-    console.log(dataSet.weather[0].main)                                    // stan pogody
-    console.log(dataSet.main.temp + " " + String.fromCharCode(176) + "C")  // temperatura w stopniach C
+    console.log(dataSet.weather[0].main);                                     // stan pogody
+    console.log(dataSet.main.temp + " " + String.fromCharCode(176) + "C");  // temperatura w stopniach C
+    console.log(dataSet);
 }
 
 // Reakcja na klikniecie przycisku i pobranie danych(miasta) z inputu oraz uruchomienie funkcji pogodowej z wybranym miastem
