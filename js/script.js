@@ -46,22 +46,23 @@ function init(dataSet) {
             break;
     }
 
-    let weatherType = document.getElementsByClassName('weatherType');
-    let temperatureElement = document.getElementsByClassName('temperature');
-    let humidityElement = document.getElementsByClassName('humidity');
-    let windSpeedElement = document.getElementsByClassName('windSpeed');
+    let weatherType = document.getElementById('weatherType');
+    let temperatureElement = document.getElementById('temperature');
+    let humidityElement = document.getElementById('humidity');
+    let windSpeedElement = document.getElementById('windSpeed');
 
     let weatherIcon = document.getElementById('weatherIcon');
     weatherIcon.src = 'http://openweathermap.org/img/w/' + dataSet.weather[0].icon + '.png';
     // console.log(weatherIcon.src);
 
     let resultsDescription = dataSet.weather[0].description;
-    weatherType.inner = resultsDescription.charAt(0).toUpperCase () + resultsDescription.slice(1)
+    weatherType.innerHTML = resultsDescription.charAt(0).toUpperCase () + resultsDescription.slice(1);
 
-    temperatureElement.innerHTML = Math.floor(dataSet.main.temp) + '&#176';
-    windSpeedElement.innerHTML = 'Wiatr' + Math.floor(dataSet.wind.speed) + 'm/s';
-    cityHeader.innerHTML = dataSet.name;
-    humidityElement.innerHTML = 'Wilgotność powietrza' + Math.floor(dataSet.humidity) + '%';
+    
+    temperatureElement.innerHTML = Math.floor(dataSet.main.temp) + '&#176C';
+    windSpeedElement.innerHTML = 'Wiatr ' + Math.floor(dataSet.wind.speed) + ' m/s';
+    cityName.innerHTML = dataSet.name;
+    humidityElement.innerHTML = 'Wilgotność powietrza ' + Math.floor(dataSet.humidity) + ' %';
 
         
 
