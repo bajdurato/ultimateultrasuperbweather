@@ -27,12 +27,12 @@ body{
 
 #main{
     display: none;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: var(--main-panel-bg);
     height: 55%;
-    width: 80%;
+    width: 60%;
     color: #FFFFFF;
     border-radius: 15px;
 }
@@ -69,6 +69,16 @@ body{
     font-size: 32px;
 }
 
+.weather {
+    display: flex;
+    flex-direction: row;
+}
+
+#weatherIcon {
+    padding-left: 16px;
+    transform: scale(1.5);
+}
+
 
 /* Sekcji wyszukiwania */
 
@@ -81,11 +91,11 @@ body{
     width: 60%;
 }
 .search-title{
-    font-size: 2rem;
+    font-size: 24px;
 }
 .search-text{
-    height: 20%;
-    width: 60%;
+    height: 40px;
+    width: 100%;
     display: flex;
     position: relative;
 }
@@ -105,6 +115,7 @@ button{
     border-radius: 50px;
     border: none;
     color: #FFFFFF;
-    height: 4.5vh;
+    height: 40px;
     width: 5vw;
+    outline: none;
 }
