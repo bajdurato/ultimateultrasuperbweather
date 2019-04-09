@@ -25,17 +25,23 @@ body{
 
 /* Panuelu wyświetlającego dane pogodowe */
 
-.main-panel{
+#main{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: var(--main-panel-bg);
     height: 55%;
-    width: 70%;
+    width: 80%;
     color: #FFFFFF;
     border-radius: 15px;
+    visibility: hidden;
 }
+
+#main:target {
+    visibility: visible;
+}
+
 .info{
     display:flex;
     flex-direction: column;
