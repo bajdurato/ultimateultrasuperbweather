@@ -22,6 +22,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* Panuelu wyświetlającego dane pogodowe */
+
 .main-panel{
     display:flex;
     flex-direction: row;
@@ -29,7 +32,7 @@ body{
     align-items: center;
     background-color: var(--main-panel-bg);
     height: 55%;
-    width: 80%;
+    width: 70%;
     color: #FFFFFF;
     border-radius: 15px;
 }
@@ -37,6 +40,37 @@ body{
     display:flex;
     flex-direction: column;
 }
+
+#cityName {
+    font-size: 64px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 48px;
+}
+.data img {
+    display: flex;
+    height: 80px;
+    width: auto;
+}
+
+#temperature,
+#windSpeed,
+#humidity {
+    padding: 16px;
+}
+
+#weatherType {
+    font-style: italic;
+    font-size: 32px;
+}
+
+
+/* Sekcji wyszukiwania */
+
 .search-bar{
     display:flex;
     flex-direction: column;
@@ -53,8 +87,6 @@ body{
     width: 60%;
     display: flex;
     position: relative;
-    right: -20px;
-    /* justify-content: space-between; */
 }
 .search-text input{
     background: #FFFFFF;
@@ -65,11 +97,7 @@ body{
     padding-left: 1rem;
     outline: none;
 }
-.search-text img{
-    right: 40px;
-    position: relative;
-    transform: scale(0.7);
-}
+
 button{
     font-size: 1rem;
     background: #343434;
@@ -78,24 +106,4 @@ button{
     color: #FFFFFF;
     height: 4.5vh;
     width: 5vw;
-}
-.country{
-    font-size: 2.25rem;
-}
-.city{
-    font-size: 6rem;
-}
-.date, .week-day, .weather-type{
-    font-size: 3rem;
-}
-.temperature{
-    font-size: 4rem;
-}
-
-.windSpeed {
-    font-size: 4rem;
-}
-
-.humidity {
-    font-size: 4rem;
 }

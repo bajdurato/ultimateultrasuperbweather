@@ -59,10 +59,10 @@ function init(dataSet) {
     weatherType.innerHTML = resultsDescription.charAt(0).toUpperCase () + resultsDescription.slice(1);
 
     
-    temperatureElement.innerHTML = Math.floor(dataSet.main.temp) + '&#176C';
-    windSpeedElement.innerHTML = 'Wiatr ' + Math.floor(dataSet.wind.speed) + ' m/s';
+    temperatureElement.innerHTML = "<img src='icons/temp.png'/>" + Math.floor(dataSet.main.temp) + '&#176C';
+    windSpeedElement.innerHTML = "<img src='icons/wind.png'/>" + Math.floor(dataSet.wind.speed) + ' m/s';
     cityName.innerHTML = dataSet.name;
-    humidityElement.innerHTML = 'Wilgotność powietrza ' + Math.floor(dataSet.humidity) + ' %';
+    humidityElement.innerHTML = "<img src='icons/humidity.png'/>" + Math.floor(dataSet.main.humidity) + ' %';
 
         
 
