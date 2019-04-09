@@ -78,3 +78,9 @@ document.getElementById('searchBtn').addEventListener('click', () => {
     let city = document.getElementById('city').value;
     searchWeather(city);
 })
+document.getElementById('city').addEventListener('keyup', (e) => {
+    if (e.keyCode === 13){
+        let city = document.getElementById('city').value;
+        searchWeather(city);
+    }
+})
