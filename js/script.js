@@ -10,7 +10,7 @@ var searchMethod = 'q';
 // nastepnie czeka na odpowiedz od serwera, odbiera json'a z danymi pogodowymi,
 // inicjuje funkcje do obrabiania naszych danych (na ta chwile loguje jsona zeby podgladac format danych)
 function searchWeather(city) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${city}&APPID=${apiId}&units=${units}`).then(result => {
+    fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${city}&APPID=${apiId}&units=${units}&lang=pl`).then(result => {
         return result.json();
     }).then(result => {
         init(result);
