@@ -26,7 +26,7 @@ body{
 /* Panuelu wyświetlającego dane pogodowe */
 
 #main{
-    display:flex;
+    display: none;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -35,11 +35,6 @@ body{
     width: 80%;
     color: #FFFFFF;
     border-radius: 15px;
-    visibility: hidden;
-}
-
-#main:target {
-    visibility: visible;
 }
 
 .info{

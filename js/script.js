@@ -1,3 +1,7 @@
+function showDiv() {
+    document.getElementById("main").style.display = "flex";
+}
+
 // Nasze api
 var apiId = 'a85d2123b5271bca849dc751e64a2b42';
 // Jednostki w ktorych chcemy otrzymywac dane
@@ -71,16 +75,17 @@ function init(dataSet) {
     console.log(dataSet);
 }
 
-
-
 // Reakcja na klikniecie przycisku i pobranie danych(miasta) z inputu oraz uruchomienie funkcji pogodowej z wybranym miastem
 document.getElementById('searchBtn').addEventListener('click', () => {
     let city = document.getElementById('city').value;
     searchWeather(city);
+    showDiv();
 })
 document.getElementById('city').addEventListener('keyup', (e) => {
     if (e.keyCode === 13){
         let city = document.getElementById('city').value;
         searchWeather(city);
+        showDiv();
     }
 })
+
