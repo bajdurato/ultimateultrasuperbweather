@@ -14,7 +14,7 @@ var searchMethod = 'q';
 // nastepnie czeka na odpowiedz od serwera, odbiera json'a z danymi pogodowymi,
 // inicjuje funkcje do obrabiania naszych danych (na ta chwile loguje jsona zeby podgladac format danych)
 function searchWeather(city) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${city}&APPID=${apiId}&units=${units}&lang=pl`).then(result => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?${searchMethod}=${city}&APPID=${apiId}&units=${units}&lang=pl`).then(result => {
         return result.json();
     }).then(result => {
         init(result);
@@ -56,7 +56,7 @@ function init(dataSet) {
     let windSpeedElement = document.getElementById('windSpeed');
 
     let weatherIcon = document.getElementById('weatherIcon');
-    weatherIcon.src = 'http://openweathermap.org/img/w/' + dataSet.weather[0].icon + '.png';
+    weatherIcon.src = 'https://openweathermap.org/img/w/' + dataSet.weather[0].icon + '.png';
     // console.log(weatherIcon.src);
 
     let resultsDescription = dataSet.weather[0].description;
